@@ -1,0 +1,99 @@
+<!--
+
+<h4>Template driven form</h4>
+<form [formGroup]="signupForm" (ngSubmit)="signup()">
+    <input  placeholder="first name" class="form-control" formControlName="firstName"><br>
+    <div class="alert alert-danger my-3" *ngIf="firstName?.invalid && ( firstName?.dirty ||firstName?.touched)">
+      <p *ngIf="firstName?.errors?.required"> * firstName is required </p>
+      <p *ngIf="firstName?.errors?.minlength"> * firstName  minimum length is 6 </p>
+      <p *ngIf="firstName?.errors?.maxlength"> * firstName  maximum length is 20 </p>
+      </div>
+    <input  placeholder="last name"  class="form-control" formControlName="lastName">
+    <div class="alert alert-danger my-3" *ngIf="lastName?.invalid && ( lastName?.dirty ||lastName?.touched)">
+      <p *ngIf="lastName?.errors?.required"> * lastName is required </p>
+      <p *ngIf="lastName?.errors?.minlength"> * lastName  minimum length is 6 </p>
+      <p *ngIf="lastName?.errors?.maxlength"> * lastName  maximum length is 20 </p>
+      </div>
+    <br>
+    <input type="email"  placeholder="email"   class="form-control" formControlName="email">
+    <div class="alert alert-danger my-3" *ngIf="email?.invalid && ( email?.dirty ||email?.touched)">
+      <p *ngIf="email?.errors?.required"> * email is required </p>
+      <p *ngIf="email?.errors?.email"> * invalid email format </p>
+  </div>
+    <br>
+    <input  placeholder="age" class="form-control" formControlName="age" >
+    <div class="alet aler-danger my-3" *ngIf="age?.invalid &&( email?.dirty ||email?.touched)">
+      <p *ngIf="age?.errors?.required"> * age is required </p>
+      <p *ngIf="age?.errors?.min"> * age must be at least 21 </p>
+    </div>
+    <br>
+    <select name="gender" class="form-control" formControlName="gender">
+        <option value="male">male</option>
+        <option value="female">female</option>
+    </select>
+        <br>
+    <input  placeholder="password" class="form-control" formControlName="password"><br>
+    <button>submit</button>
+</form> -->
+
+<div class="container-fluid" id="wrap">
+	  <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form action="r"  accept-charset="utf-8" class="form"  [formGroup]="signupForm" (ngSubmit)="signup()">   <legend>Sign Up</legend>
+                    <h4>It's free and always will be.</h4>
+                    <div class="row">
+                        <div class="col-xs-6 col-md-6">
+                            <input type="text" formControlName="firstName"  class="form-control input-lg" placeholder="First Name"  />
+                            <div class="alert alert-danger my-3" *ngIf="firstName?.invalid && ( firstName?.dirty ||firstName?.touched)">
+                              <p *ngIf="firstName?.errors?.required"> * firstName is required </p>
+                              <p *ngIf="firstName?.errors?.minlength"> * firstName  minimum length is 6 </p>
+                              <p *ngIf="firstName?.errors?.maxlength"> * firstName  maximum length is 20 </p>
+                              </div>
+                             </div>
+
+
+                              <div class="col-xs-6 col-md-6">
+                            <input type="text" formControlName="lastName"  class="form-control input-lg" placeholder="Last Name"  />
+                            <div class="alert alert-danger my-3" *ngIf="lastName?.invalid && ( lastName?.dirty ||lastName?.touched)">
+                              <p *ngIf="lastName?.errors?.required"> * lastName is required </p>
+                              <p *ngIf="lastName?.errors?.minlength"> * lastName  minimum length is 6 </p>
+                              <p *ngIf="lastName?.errors?.maxlength"> * lastName  maximum length is 20 </p>
+                              </div>
+                          </div>
+
+
+                    </div>
+                    <div class="my-3">
+                    <input type="email" formControlName="email"class="form-control input-lg" placeholder="Your Email"  />
+                  </div>
+                    <div class="alert alert-danger my-3" *ngIf="email?.invalid && ( email?.dirty ||email?.touched)">
+                      <p *ngIf="email?.errors?.required"> * email is required </p>
+                      <p *ngIf="email?.errors?.email"> * invalid email format </p>
+                  </div>
+
+
+
+                  <div class="my-3">
+                  <input type="password"  placeholder="password" class="form-control" formControlName="password">
+                </div>
+                <input type="number"  placeholder="age" class="form-control" formControlName="age" >
+                <div class="alet aler-danger my-3" *ngIf="age?.invalid &&( email?.dirty ||email?.touched)">
+                  <p *ngIf="age?.errors?.required"> * age is required </p>
+                  <p *ngIf="age?.errors?.min"> * age must be at least 21 </p>
+                </div>
+                 <select name="gender" class="form-control" formControlName="gender">
+
+                  <option value="male">male</option>
+                  <option value="female">female</option>
+                    </select>
+
+                    <br />
+              <span class="help-block">By clicking Create my account, you agree to our Terms and that you have read our Data Use Policy, including our Cookie Use.</span>
+                    <button class="btn btn-lg btn-primary btn-block signup-btn">Create my account</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <img class="signupimage" src="/assets/4.jpg" alt="">
+          </div>
+</div>
+</div>

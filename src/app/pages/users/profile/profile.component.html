@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section class="container pt-5">
+  <div class="row">
+      <div class="tab col-md-3">
+          <button class="tablinks" onclick="openCity(event, 'myaccount')" id="defaultOpen">>>My account</button>
+          <button class="tablinks" onclick="openCity(event, 'myaorders')">>>My orders</button>
+          <button class="tablinks" onclick="openCity(event, 'myfavourits')">>>my favourits</button>
+          <button class="tablinks" onclick="openCity(event, 'nontification')">>>nontificatoin</button>
+      </div>
+
+
+      <div class="col-md-9">
+          <div id="myaorders" class="tabcontent">
+              <div class="heading">
+                  <p>Manage Orders</p>
+              </div>
+              <div class="pull-right text-right">
+                  <div class="dropdown show order-dropdown">
+                      <a class="m-2 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                      </a>
+
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+                  <nav aria-label="Page navigation example" style="display: inline-block;">
+                  <ul class="pagination">
+                      <li ><p class="page-link" style="color: black !important;"  href="#">page : </p></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+
+                  </ul>
+                </nav>
+              </div>
+              <table class="table table-hover">
+
+                  <tbody>
+                    <tr>
+                      <th scope="row"><img src="images/shop/order-1.jpg" alt=""></th>
+                      <td> <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p> <i class="far fa-calendar-alt"></i>  25june 2000</p>
+                        <p><i class="fas fa-check-circle"></i> delivered</p>
+                      </td>
+                      <td>
+                        <p><i class="fas fa-info-circle"></i> Details </p>
+                        <i class="fas fa-pound-sign"></i>250 egp
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/shop/order-1.jpg" alt=""></th>
+                      <td> <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p> <i class="far fa-calendar-alt"></i>  25june 2000</p>
+                        <p><i class="fas fa-check-circle"></i> delivered</p>
+                      </td>
+                      <td>
+                        <p><i class="fas fa-info-circle"></i> Details </p>
+                        <i class="fas fa-pound-sign"></i>250 egp
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/shop/order-1.jpg" alt=""></th>
+                      <td> <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p> <i class="far fa-calendar-alt"></i>  25june 2000</p>
+                        <p><i class="fas fa-check-circle"></i> delivered</p>
+                      </td>
+                      <td>
+                        <p><i class="fas fa-info-circle"></i> Details </p>
+                        <i class="fas fa-pound-sign"></i>250 egp
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="images/shop/order-1.jpg" alt=""></th>
+                      <td> <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p> <i class="far fa-calendar-alt"></i>  25june 2000</p>
+                        <p><i class="fas fa-check-circle"></i> delivered</p>
+                      </td>
+                      <td>
+                        <p><i class="fas fa-info-circle"></i> Details </p>
+                        <i class="fas fa-pound-sign"></i>250 egp
+                      </td>
+
+                    </tr>
+                  </tbody>
+                </table>
+
+          </div>
+
+            <div id="myaccount" class="tabcontent">
+              <div class="heading">
+                <p>Manage Account</p>
+            </div>
+            <div class="pt-2">
+            <table id="table" class="table table-hover ">
+
+              <tbody>
+                <tr>
+                  <th scope="row">Account ID</th>
+                  <td colspan="2"r>{{userData._id}}</td>
+
+
+                </tr>
+                <tr>
+                  <th scope="row">Name</th>
+                  <td colspan="2">{{userData.firstName}}</td>
+                  <td><button><i class="fas fa-edit"></i>Edit</button></td>
+
+                </tr>
+                <tr>
+                  <th scope="row">Password</th>
+                  <td colspan="2">{{userData.password}}</td>
+                  <td><button><i class="fas fa-edit"></i>Edit</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">Email</th>
+                  <td colspan="2">{{userData.email}}</td>
+                  <td><button><i class="fas fa-edit"></i>Edit</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">shopping cart</th>
+                  <td colspan="2">125 ABC st</td>
+                  <td><button><i class="fas fa-edit"></i>Edit</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">phone</th>
+                  <td colspan="2">0100</td>
+                  <td><button><i class="fas fa-edit"></i>Edit</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">job Title</th>
+                  <td colspan="2">front end developer</td>
+                  <td><button><i class="fas fa-edit"></i>Edit</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">company</th>
+                  <td colspan="2"></td>
+                  <td><button><i class="fas fa-edit"></i>Edit</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">Gender</th>
+                  <td colspan="2">{{userData.gender}}</td>
+                  <td><button><i class="fas fa-edit"></i>Edit</button></td>
+                </tr>
+                <tr>
+                  <th scope="row">postal code</th>
+                  <td colspan="2">21651</td>
+                  <td><button><i class="fas fa-edit"></i>Edit</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+            </div>
+
+
+
+          <div id="myfavourits" class="tabcontent">
+            <div class="heading">
+              <p>favourit items</p>
+          </div>
+          <table class="table table-hover">
+
+            <tbody>
+              <tr>
+                <th scope="row"><img src="images/shop/order-1.jpg" alt=""></th>
+                <td> <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                 >>250 egp
+                  <p><i class="fas fa-heart"></i> favourits </p>
+
+                </td>
+                <td>
+                  <p><button class="Shop-now">Buy now</button> </p>
+                  <p><i class="far fa-trash-alt"></i><span class="pl-2"> Remove</span></p>
+
+                </td>
+
+              </tr>
+              <tr>
+                <th scope="row"><img src="images/shop/order-1.jpg" alt=""></th>
+                <td> <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                 >>250 egp
+                  <p><i class="fas fa-heart"></i> favourits </p>
+
+                </td>
+                <td>
+                  <p><button class="Shop-now">Buy now</button> </p>
+                  <p><i class="far fa-trash-alt"></i><span class="pl-2"> Remove</span></p>
+
+                </td>
+
+              </tr>
+              <tr>
+                <th scope="row"><img src="images/shop/order-1.jpg" alt=""></th>
+                <td> <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                 >>250 egp
+                  <p><i class="fas fa-heart"></i> favourits </p>
+
+                </td>
+                <td>
+                  <p><button class="Shop-now">Buy now</button> </p>
+                  <p><i class="far fa-trash-alt"></i><span class="pl-2"> Remove</span></p>
+
+                </td>
+
+              </tr>
+              <tr>
+                <th scope="row"><img src="images/shop/order-1.jpg" alt=""></th>
+                <td> <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                 >>250 egp
+                  <p><i class="fas fa-heart"></i> favourits </p>
+
+                </td>
+                <td>
+                  <p><button class="Shop-now">Buy now</button> </p>
+                  <p><i class="far fa-trash-alt"></i><span class="pl-2"> Remove</span></p>
+
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <div id="nontification" class="tabcontent">
+            <div class="heading">
+              <p>nontification</p>
+          </div>
+          <div class="pull-right">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li ><p class="page-link" style="color: black !important;"  href="#">page : </p></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+
+            </ul>
+          </nav>
+        </div>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+
+              <td><h3><i class="far fa-bell"></i> New products</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum impedit quo fuga numquam tempore excepturi!</p></td>
+              <td ><div><a class="nontification-remove-link" href="">Remove</a></div> </td>
+
+            </tr>
+            <tr>
+
+              <td><h3><i class="far fa-bell"></i> New offers</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum impedit quo fuga numquam tempore excepturi!</p></td>
+              <td ><div><a class="nontification-remove-link" href="">Remove</a></div> </td>
+
+            </tr>
+            <tr>
+
+              <td><h3><i class="far fa-bell"></i> subscribe now</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum impedit quo fuga numquam tempore excepturi!</p></td>
+              <td ><div><a class="nontification-remove-link" href="">Remove</a></div> </td>
+
+            </tr>
+            <tr>
+
+              <td><h3><i class="far fa-bell"></i> New year</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum impedit quo fuga numquam tempore excepturi!</p></td>
+              <td ><div><a class="nontification-remove-link" href="">Remove</a></div> </td>
+
+            </tr>
+          </tbody>
+        </table>
+          </div>
+      </div>
+  </div>
+  </section>
+
+  <script>
+    function openCity(evt, cityName) {
+       var i, tabcontent, tablinks;
+       tabcontent = document.getElementsByClassName("tabcontent");
+       for (i = 0; i < tabcontent.length; i++) {
+           tabcontent[i].style.display = "none";
+       }
+       tablinks = document.getElementsByClassName("tablinks");
+       for (i = 0; i < tablinks.length; i++) {
+           tablinks[i].className = tablinks[i].className.replace(" active", "");
+       }
+       document.getElementById(cityName).style.display = "block";
+       evt.currentTarget.className += " active";
+   }
+
+   // Get the element with id="defaultOpen" and click on it
+   document.getElementById("defaultOpen").click();
+</script>
+
+
+</body>
+</html>
